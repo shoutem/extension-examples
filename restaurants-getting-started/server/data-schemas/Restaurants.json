@@ -1,0 +1,38 @@
+{
+  "title": "Restaurant",
+  "properties": {
+    "name": {
+      "format": "single-line",
+      "title": "Restaurant name",
+      "type": "string"
+    },
+    "address": {
+      "format": "single-line",
+      "title": "Address",
+      "type": "string"
+    },
+    "description": {
+      "format": "multi-line",
+      "title": "Description",
+      "type": "string"
+    },
+    "url": {
+      "format": "uri",
+      "title": "Website",
+      "type": "string"
+    },
+    "image": {
+      "format": "attachment",
+      "title": "Image",
+      "type": "object",
+      "referencedSchema": "shoutem.core.image-attachments"
+    },
+    "mail": {
+      "format": "single-line",
+      "title": "E-mail",
+      "type": "string"
+    }
+  },
+  "titleProperty": "name",
+  "type": "object"
+}

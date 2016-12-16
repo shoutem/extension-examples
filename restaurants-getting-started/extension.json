@@ -1,0 +1,35 @@
+{
+  "name": "restaurants",
+  "title": "Restaurants",
+  "version": "0.0.1",
+  "description": "List of restaurants",
+  "shortcuts": [
+    {
+      "title": "Restaurants",
+      "description": "Show the user restaurants",
+      "name": "openRestaurantsList",
+      "screen": "@.RestaurantsList",
+      "adminPages": [{
+        "page": "shoutem.cms.CmsPage",
+        "title": "Content",
+        "parameters": {
+          "schema": "@.Restaurants"
+        }
+      }]
+    }
+  ],
+  "screens": [
+    {
+      "name": "RestaurantsList"
+    },
+    {
+      "name": "RestaurantDetails"
+    }
+  ],
+  "dataSchemas": [
+    {
+      "name": "Restaurants",
+      "path": "server/data-schemas/Restaurants.json"
+    }
+  ]
+}
