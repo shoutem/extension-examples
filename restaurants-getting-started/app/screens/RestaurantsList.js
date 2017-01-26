@@ -22,6 +22,7 @@ import {
   shouldRefresh,
   getCollection
 } from '@shoutem/redux-io';
+import _ from 'lodash';
 
 import { connect } from 'react-redux';
 import { navigateTo } from '@shoutem/core/navigation';
@@ -37,9 +38,11 @@ class RestaurantsList extends Component {
   componentDidMount() {
     const { find, restaurants } = this.props;
     if (shouldRefresh(restaurants)) {
-      find(ext('Restaurants'), 'all', {
-          include: 'image',
-      });
+      _.defer(() =>
+        find(ext('Restaurants'), 'all', {
+            include: 'image',
+        })
+      );
     }
   }
 
