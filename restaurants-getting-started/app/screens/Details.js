@@ -1,9 +1,11 @@
 import React, {
   Component
 } from 'react';
+
 import {
   ScrollView,
 } from 'react-native';
+
 import {
   Icon,
   Row,
@@ -17,7 +19,7 @@ import {
   Tile,
 } from '@shoutem/ui';
 
-export default class RestaurantDetails extends Component {
+export default class Details extends Component {
   render() {
     const { restaurant } = this.props;
 

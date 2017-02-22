@@ -1,9 +1,11 @@
 import React, {
   Component
 } from 'react';
+
 import {
   TouchableOpacity,
 } from 'react-native';
+
 import {
   Image,
   ListView,
@@ -11,10 +13,13 @@ import {
   Title,
   Subtitle,
   Overlay,
-  Divider,
   Screen
 } from '@shoutem/ui';
+
 import { NavigationBar } from '@shoutem/ui/navigation';
+import { navigateTo } from '@shoutem/core/navigation';
+import { ext } from '../extension';
+import { connect } from 'react-redux';
 
 import {
   find,
@@ -23,14 +28,11 @@ import {
   getCollection
 } from '@shoutem/redux-io';
 
-import { connect } from 'react-redux';
-import { navigateTo } from '@shoutem/core/navigation';
-import { ext } from '../const';
-
-class RestaurantsList extends Component {
+class List extends Component {
   constructor(props) {
     super(props);
 
+    // bind renderRow function to get the correct props
     this.renderRow = this.renderRow.bind(this);
   }
 
@@ -39,16 +41,17 @@ class RestaurantsList extends Component {
     if (shouldRefresh(restaurants)) {
       find(ext('Restaurants'), 'all', {
           include: 'image',
-      });
+      })
     }
   }
 
+  // defines the UI of each row in the list
   renderRow(restaurant) {
     const { navigateTo } = this.props;
 
     return (
       <TouchableOpacity onPress={() => navigateTo({
-        screen: ext('RestaurantDetails'),
+        screen: ext('Details'),
         props: { restaurant }
       })}>
         <Image styleName="large-banner" source={{ uri: restaurant.image &&
@@ -70,7 +73,7 @@ class RestaurantsList extends Component {
         <NavigationBar title="RESTAURANTS" />
         <ListView
           data={restaurants}
-          status={isBusy(restaurants)}
+          loading={isBusy(restaurants)}
           renderRow={restaurant => this.renderRow(restaurant, navigateTo)}
         />
       </Screen>
@@ -78,9 +81,11 @@ class RestaurantsList extends Component {
   }
 }
 
+// connect screen to redux store
 export default connect(
   (state) => ({
+    // get an array of restaurants from allRestaurants collection
     restaurants: getCollection(state[ext()].allRestaurants, state)
   }),
   { navigateTo, find }
-)(RestaurantsList);
+)(List);

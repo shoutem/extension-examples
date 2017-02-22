@@ -1,10 +1,9 @@
-import reducer from './reducers';
-import RestaurantsList from './screens/RestaurantsList';
-import RestaurantDetails from './screens/RestaurantDetails';
+// Reference for app/index.js can be found here:
+// http://shoutem.github.io/docs/extensions/reference/extension-exports
 
-export const screens = {
-  RestaurantsList,
-  RestaurantDetails
-};
+import reducer from './reducer';
+import * as extension from './extension.js';
+
+export const screens = extension.screens;
 
 export { reducer };

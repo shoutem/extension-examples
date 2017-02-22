@@ -4,33 +4,39 @@
     "name": {
       "format": "single-line",
       "title": "Restaurant name",
-      "type": "string"
+      "type": "string",
+      "displayPriority": 1
     },
     "address": {
       "format": "single-line",
       "title": "Address",
-      "type": "string"
+      "type": "string",
+      "displayPriority": 2
     },
     "description": {
       "format": "multi-line",
       "title": "Description",
-      "type": "string"
+      "type": "string",
+      "displayPriority": 3
     },
     "url": {
       "format": "uri",
       "title": "Website",
-      "type": "string"
+      "type": "string",
+      "displayPriority": 4
     },
     "image": {
       "format": "attachment",
       "title": "Image",
       "type": "object",
-      "referencedSchema": "shoutem.core.image-attachments"
+      "referencedSchema": "shoutem.core.image-attachments",
+      "displayPriority": 5
     },
     "mail": {
       "format": "single-line",
       "title": "E-mail",
-      "type": "string"
+      "type": "string",
+      "displayPriority": 6
     }
   },
   "titleProperty": "name",
