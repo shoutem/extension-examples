@@ -3,7 +3,7 @@
   "properties": {
     "name": {
       "format": "single-line",
-      "title": "Restaurant name",
+      "title": "Restaurant's name",
       "type": "string",
       "displayPriority": 1
     },

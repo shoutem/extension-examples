@@ -1,35 +1,22 @@
 {
   "name": "restaurants",
-  "title": "Restaurants",
   "version": "0.0.1",
-  "description": "",
   "platform": "1.0.*",
-  "screens": [
-    {
-      "name": "List"
-    },
-    {
-      "name": "Details"
-    }
-  ],
-  "shortcuts": [
-    {
-      "title": "Restaurants",
-      "name": "Restaurants",
-      "screen": "@.List",
-      "adminPages": [{
-        "page": "shoutem.cms.CmsPage",
-        "title": "Content",
-        "parameters": {
-          "schema": "@.Restaurants"
-        }
-      }]
-    }
-  ],
-  "dataSchemas": [
-    {
-      "name": "Restaurants",
-      "path": "server/data-schemas/Restaurants.json"
-    }
-  ]
+  "title": "Restaurants",
+  "description": "List of restaurants",
+  "screens": [{
+    "name": "List"
+  }, {
+    "name": "Details"
+  }],
+  "shortcuts": [{
+    "name": "Restaurants",
+    "title": "Restaurants",
+    "description": "Allow users to browse through list of restaurants",
+    "screen": "@.List"
+  }],
+  "dataSchemas": [{
+    "name": "Restaurants",
+    "path": "server/data-schemas/Restaurants.json"
+  }]
 }

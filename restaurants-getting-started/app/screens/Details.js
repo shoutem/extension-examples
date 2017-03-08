@@ -25,7 +25,7 @@ export default class Details extends Component {
 
     return (
       <ScrollView style = {{marginTop:-70}}>
-        <Image styleName="large-portrait" source={{ uri: restaurant.image &&
+        <Image styleName="large-banner" source={{ uri: restaurant.image &&
         restaurant.image.url ? restaurant.image.url : undefined }}>
           <Overlay styleName="fill-parent">
             <Title>{restaurant.name}</Title>
