@@ -13,7 +13,14 @@
     "name": "Restaurants",
     "title": "Restaurants",
     "description": "Allow users to browse through list of restaurants",
-    "screen": "@.List"
+    "screen": "@.List",
+    "adminPages": [{
+      "page": "shoutem.cms.CmsPage",
+      "title": "Content",
+      "parameters": {
+        "schema": "@.Restaurants"
+      }
+    }]
   }],
   "dataSchemas": [{
     "name": "Restaurants",
