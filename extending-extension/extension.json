@@ -1,0 +1,13 @@
+{
+  "name": "news-rss",
+  "title": "News-rss",
+  "version": "0.0.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [{
+    "name": "List",
+    "title": "List with big pictures",
+    "image": "./server/assets/large-news-list.png",
+    "extends": "shoutem.rss-news.ArticlesGridScreen"
+  }]
+}
