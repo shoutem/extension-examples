@@ -29,7 +29,7 @@ function onPageReady(config) {
     const greeting = $('#greetingName').val();
 
     // updates current shortcut settings by patching with current settings
-    shoutem.api.shortcuts.updateSettings({ greetingName })
+    shoutem.api.shortcuts.updateSettings({ greeting })
       .catch(errorHandler);
 
     return false;
@@ -40,7 +40,7 @@ function onPageReady(config) {
       return;
     }
 
-    $('#greetingName').val(settings.greetingName);
+    $('#greetingName').val(settings.greeting);
   }
 
   $('button[type="submit"]').click(handleSubmit);
