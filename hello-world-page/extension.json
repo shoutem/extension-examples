@@ -20,6 +20,7 @@
   }],
   "pages": [{
     "name": "HelloWorldPage",
+    "type": "html",
     "path": "server/pages/HelloWorldPage/index.html"
   }]
 }
