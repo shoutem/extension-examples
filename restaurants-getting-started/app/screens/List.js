@@ -28,7 +28,7 @@ import {
   getCollection
 } from '@shoutem/redux-io';
 
-class List extends Component {
+export class List extends Component {
   constructor(props) {
     super(props);
 
