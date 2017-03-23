@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "title": "Hello!",
   "description": "Writing my first settings page!",
+  "platform": "1.0.*",
   "shortcuts": [{
     "name": "ShowGreeting",
     "title": "Show Greeting",
@@ -20,6 +21,7 @@
   }],
   "pages": [{
     "name": "HelloWorldPage",
+    "type": "html",
     "path": "server/pages/HelloWorldPage/index.html"
   }]
 }
