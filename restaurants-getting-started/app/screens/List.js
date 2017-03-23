@@ -75,7 +75,7 @@ export class List extends Component {
         <ListView
           data={restaurants}
           loading={isBusy(restaurants)}
-          renderRow={restaurant => this.renderRow(restaurant, navigateTo)}
+          renderRow={restaurant => this.renderRow(restaurant)}
         />
       </Screen>
     );
