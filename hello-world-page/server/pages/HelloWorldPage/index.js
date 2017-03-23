@@ -1,4 +1,4 @@
-/ listen for Shoutem initialization complete
+// listen for Shoutem initialization complete
 document.addEventListener('shoutemready', onShoutemReady, false);
 
 // handler for Shoutem initialization finished
@@ -12,7 +12,7 @@ function onShoutemReady(event) {
     shoutem.api.init(config.context);
     onPageReady(config);
   });
-};
+}
 
 // Put your settings page logic here, executes when sandbox and DOm are initalized
 function onPageReady(config) {
