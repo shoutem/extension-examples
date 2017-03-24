@@ -6,13 +6,13 @@ import {
   Title,
 } from '@shoutem/ui';
 
-export default class GreetingsScreen extends Component {
+export default class GreetingScreen extends Component {
   render() {
     const { shortcut } = this.props;
-    const { greetingName } = shortcut.settings;
+    const { greeting } = shortcut.settings;
 
     return (
-      <Title>Hello {greetingName}!</Title>
+      <Title>Hello {greeting}!</Title>
     );
   }
 }

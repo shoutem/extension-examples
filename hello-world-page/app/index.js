@@ -1,10 +1,8 @@
-// Constants `screens` and `reducer` are exported via named export
-// It is important to use those exact names
+// Reference for app/index.js can be found here:
+// http://shoutem.github.io/docs/extensions/reference/extension-exports
 
-import GreetingScreen from './screens/GreetingScreen';
+import * as extension from './extension.js';
 
-export const screens = {
-  GreetingScreen
-};
+export const screens = extension.screens;
 
 export const reducer = {};

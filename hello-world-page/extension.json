@@ -3,23 +3,25 @@
   "version": "0.0.1",
   "title": "Hello!",
   "description": "Writing my first settings page!",
+  "platform": "1.0.*",
   "shortcuts": [{
     "name": "ShowGreeting",
     "title": "Show Greeting",
-    "screen": "@.GreetingsScreen",
+    "screen": "@.GreetingScreen",
     "adminPages": [{
       "page": "@.HelloWorldPage",
       "title": "Greetings"
     }],
     "settings": {
-      "greetingName": "World"
+      "greeting": "World"
     }
   }],
   "screens": [{
-    "name": "GreetingsScreen"
+    "name": "GreetingScreen"
   }],
   "pages": [{
     "name": "HelloWorldPage",
+    "type": "html",
     "path": "server/pages/HelloWorldPage/index.html"
   }]
 }
