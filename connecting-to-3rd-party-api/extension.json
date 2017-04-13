@@ -1,0 +1,19 @@
+{
+  "name": "nasa",
+  "title": "NASA",
+  "version": "0.0.1",
+  "description": "Phoot of the day from Nasa",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "PhotoDay"
+    }
+  ],
+  "shortcuts": [
+    {
+      "title": "Nasa Photo",
+      "name": "Photo",
+      "screen": "@.PhotoDay"
+    }
+  ]
+}
