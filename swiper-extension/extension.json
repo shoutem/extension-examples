@@ -1,0 +1,19 @@
+{
+  "name": "swiper-extension",
+  "title": "Swiper Extension",
+  "version": "0.0.1",
+  "description": "Extension that uses react-native-swiper.",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "SwiperScreen"
+    }
+  ],
+  "shortcuts": [
+    {
+      "title": "Swiper",
+      "name": "Swiper",
+      "screen": "@.SwiperScreen"
+    }
+  ]
+}
