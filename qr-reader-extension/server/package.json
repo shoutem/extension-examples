@@ -1,0 +1,5 @@
+{
+  "name": "vladimir-vdovic.qr-reader-extension",
+  "version": "0.0.1",
+  "description": "An extension that scans QR codes and displays the encoded information to the user."
+}
