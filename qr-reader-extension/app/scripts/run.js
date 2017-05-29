@@ -6,8 +6,8 @@ const infoPlistFile = fs.readFileSync(infoPlistPath, 'utf8');
 const infoPlist = plist.parse(infoPlistFile);
 
 console.log('Adding camera and microphone permissions to Info.plist');
-infoPlist['NSCameraUsageDescription'] = 'App needs your camera to be able to scan QR codes';
-infoPlist['NSMicrophoneUsageDescription'] = 'App needs your microphone to be able to scan QR codes';
+infoPlist.NSCameraUsageDescription = 'App needs your camera to be able to scan QR codes';
+infoPlist.NSMicrophoneUsageDescription = 'App needs your microphone to be able to scan QR codes';
 fs.writeFileSync(infoPlistPath, plist.build(infoPlist));
 
 const exec = require('child_process').execSync;

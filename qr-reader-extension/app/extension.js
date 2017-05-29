@@ -9,7 +9,7 @@ import QRReaderScreen from './screens/QRReaderScreen';
 
 
 export const screens = {
-  QRReaderScreen
+  QRReaderScreen,
 };
 
 export const themes = {

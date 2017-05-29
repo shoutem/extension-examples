@@ -4,20 +4,20 @@ import Camera from 'react-native-camera';
 import _ from 'lodash';
 
 export default class QRReaderScreen extends Component {
-    constructor(props) {
-      super(props);
-      this.onBarCodeRead = this.onBarCodeRead.bind(this);
-    }
+  constructor(props) {
+    super(props);
+    this.onBarCodeRead = this.onBarCodeRead.bind(this);
+  }
 
   onBarCodeRead(code) {
-      Alert.alert(
-        'QR Code Detected',
-        code.data,
-        [
-          {text: 'OK, read it.', onPress: () => console.log('User saw QR Code contents.')},
-        ],
-        { cancelable: false }
-      )
+    Alert.alert(
+      'QR Code Detected',
+      code.data,
+      [
+        { text: 'OK, read it.', onPress: () => console.log('User saw QR Code contents.') },
+      ],
+      { cancelable: false },
+    );
   }
 
   render() {
