@@ -9,7 +9,7 @@ import SwiperScreen from './screens/SwiperScreen';
 
 
 export const screens = {
-  SwiperScreen
+  SwiperScreen,
 };
 
 export const themes = {

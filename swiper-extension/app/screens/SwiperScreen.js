@@ -1,19 +1,19 @@
 import React, {
-  Component
+  Component,
 } from 'react';
 
 import {
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
 
 import Swiper from 'react-native-swiper';
 
-export default class SwiperScreen extends Component {
+export class SwiperScreen extends Component {
   render() {
     return (
-      <Swiper style={styles.wrapper} showsButtons={true}>
+      <Swiper style={styles.wrapper} showsButtons>
         <View style={styles.slide1}>
           <Text style={styles.text}>Hello Swiper</Text>
         </View>
@@ -29,11 +29,6 @@ export default class SwiperScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   text: {
     color: '#fff',
     fontSize: 30,
@@ -58,5 +53,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#92BBD9',
-  }
+  },
 });
