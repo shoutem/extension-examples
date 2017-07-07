@@ -1,5 +1,5 @@
 {
-  "name": "vladimir-vdovic.swiper-extension",
+  "name": "tom.swiper-extension",
   "version": "0.0.1",
   "description": "Extension that uses react-native-swiper.",
   "dependencies": {
