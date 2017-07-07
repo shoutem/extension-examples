@@ -9,6 +9,7 @@ export default class QRReaderScreen extends Component {
     this.onBarCodeRead = this.onBarCodeRead.bind(this);
   }
 
+  //when camera recognizes a QR code, it will store it's content in 'code' and display an alert with the 'code' contents
   onBarCodeRead(code) {
     Alert.alert(
       'QR Code Detected',
