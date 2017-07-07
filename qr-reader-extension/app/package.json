@@ -1,5 +1,5 @@
 {
-  "name": "vladimir-vdovic.qr-reader-extension",
+  "name": "tom.qr-reader-extension",
   "version": "0.0.1",
   "description": "An extension that scans QR codes and displays the encoded information to the user.",
   "dependencies": {
@@ -7,7 +7,7 @@
   },
   "rnpm": {
     "commands": {
-      "postlink": "node node_modules/vladimir-vdovic.qr-reader-extension/scripts/run.js"
+      "postlink": "node node_modules/tom.qr-reader-extension/scripts/run.js"
     }
   },
   "devDependencies": {
