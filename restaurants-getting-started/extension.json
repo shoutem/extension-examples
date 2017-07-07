@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "platform": "1.0.*",
   "title": "Restaurants",
-  "description": "List of restaurants",
+  "description": "A restaurants extension.",
   "screens": [{
     "name": "List"
   }, {
