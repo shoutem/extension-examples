@@ -3,7 +3,7 @@
   "title": "News-rss",
   "version": "0.0.1",
   "description": "",
-  "platform": "1.3.*",
+  "platform": "1.*.*",
   "screens": [{
     "name": "ListWithBigPictures",
     "title": "List with big pictures",

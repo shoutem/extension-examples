@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "title": "Hello!",
   "description": "Writing my first settings page!",
-  "platform": "1.0.*",
+  "platform": "1.*.*",
   "shortcuts": [{
     "name": "ShowGreeting",
     "title": "Show Greeting",
