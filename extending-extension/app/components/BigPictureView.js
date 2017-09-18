@@ -1,5 +1,6 @@
-import { ListArticleView } from 'shoutem.rss-news';
+import React from 'react';
 import moment from 'moment';
+
 import {
   TouchableOpacity,
   Caption,
@@ -8,9 +9,10 @@ import {
   Title
 } from '@shoutem/ui';
 
+import { ListArticleView } from 'shoutem.news/components/ListArticleView';
 import { getLeadImageUrl } from 'shoutem.rss';
 
-export default class Item extends ListArticleView {
+export class BigPictureView extends ListArticleView {
   render() {
     const { article } = this.props;
     const dateFormat = moment(article.timeUpdated).isBefore(0) ?
@@ -24,7 +26,7 @@ export default class Item extends ListArticleView {
         >
           <Tile>
             <Title styleName="md-gutter-bottom">{article.title}</Title>
-            <Caption>{dateFormat}</Caption>
+            {dateFormat}
           </Tile>
         </Image>
       </TouchableOpacity>

@@ -1,10 +1,10 @@
 // This file is managed by Shoutem CLI
 // You should not change it
 import pack from './package.json';
-import List from './screens/List';
+import ListWithBigPictures from './screens/ListWithBigPictures';
 
 export const screens = {
-  List
+  ListWithBigPictures
 };
 
 export function ext(resourceName) {
