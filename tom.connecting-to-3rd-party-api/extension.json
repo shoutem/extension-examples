@@ -3,7 +3,7 @@
   "title": "NASA",
   "version": "0.0.1",
   "description": "Phoot of the day from Nasa",
-  "platform": "1.0.*",
+  "platform": "1.*.*",
   "screens": [
     {
       "name": "PhotoDay"

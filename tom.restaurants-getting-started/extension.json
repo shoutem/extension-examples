@@ -1,7 +1,7 @@
 {
   "name": "restaurants",
   "version": "0.0.1",
-  "platform": "1.0.*",
+  "platform": "1.*.*",
   "title": "Restaurants",
   "description": "A restaurants extension.",
   "screens": [{
