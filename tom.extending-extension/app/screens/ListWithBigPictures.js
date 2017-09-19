@@ -23,6 +23,8 @@ export class ListWithBigPictures extends ArticlesListScreen {
   }
 }
 
+// since original screen is connected to redux state,
+// we have to reconnect it in extended screen too
 export default connect(mapStateToProps, mapDispatchToProps)(
   connectStyle(ext('ListWithBigPictures'))(ListWithBigPictures),
 );

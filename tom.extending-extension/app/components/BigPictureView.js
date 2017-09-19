@@ -12,11 +12,15 @@ import {
 import { ListArticleView } from 'shoutem.news/components/ListArticleView';
 import { getLeadImageUrl } from 'shoutem.rss';
 
+const resolveDateCaption = (article) => (
+  moment(article.timeUpdated).isBefore(0) ? null :
+  <Caption>{moment(article.timeUpdated).fromNow()}</Caption>
+);
+
 export class BigPictureView extends ListArticleView {
   render() {
     const { article } = this.props;
-    const dateFormat = moment(article.timeUpdated).isBefore(0) ?
-    null : (<Caption>{moment(article.timeUpdated).fromNow()}</Caption>);
+    const dateFormat = resolveDateCaption(article);
 
     return (
       <TouchableOpacity key={article.id} onPress={this.onPress}>
