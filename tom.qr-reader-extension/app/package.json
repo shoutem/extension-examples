@@ -1,0 +1,13 @@
+{
+  "name": "tom.qr-reader-extension",
+  "version": "0.0.1",
+  "description": "An extension that scans QR codes and displays the encoded information to the user.",
+  "dependencies": {
+    "react-native-camera": "1.1.4"
+  },
+  "rnpm": {
+    "commands": {
+      "postlink": "node node_modules/tom.qr-reader-extension/scripts/run.js"
+    }
+  }
+}

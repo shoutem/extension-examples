@@ -1,0 +1,19 @@
+{
+  "name": "qr-reader-extension",
+  "title": "QR Reader",
+  "version": "0.0.1",
+  "description": "An extension that scans QR codes and displays the encoded information to the user.",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "QRReaderScreen"
+    }
+  ],
+  "shortcuts": [
+    {
+      "title": "QR Reader",
+      "name": "QRReader",
+      "screen": "@.QRReaderScreen"
+    }
+  ]
+}
